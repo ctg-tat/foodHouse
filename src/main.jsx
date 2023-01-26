@@ -9,9 +9,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <main>
       <Header />
-
       <Banner />
-
       <Menu />
     </main>
   </React.StrictMode>,

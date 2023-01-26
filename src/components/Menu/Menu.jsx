@@ -5,6 +5,77 @@ import img4 from "../../assets/noto-v1_french-fries.svg"
 import img5 from "../../assets/fluent_food-pizza-24-filled.svg"
 import img6 from "../../assets/tabler_discount-2.svg"
 
+import img11 from "../../assets/item.png"
+import img12 from "../../assets/item__image.png"
+import img13 from "../../assets/item__image3.png"
+import img14 from "../../assets/item__image4.png"
+import img15 from "../../assets/item.png"
+
+import Category from "../Category/Category"
+import Product from "../Product/Product"
+
+const categories = [
+    {
+        src: img1,
+        name: "Салаты",
+    },
+    {
+        src: img2,
+        name: "Напитки",
+    },
+    {
+        src: img3,
+        name: "Бургеры",
+    },
+    {
+        src: img4,
+        name: "Закуски",
+    },
+    {
+        src: img5,
+        name: "Пицца",
+    },
+    {
+        src: img6,
+        name: "Акции",
+    },
+];
+
+const products = [
+    {
+        src: img11,
+        name: "Салат “Греческий”"
+    },
+    {
+        src: img12,
+        name: "Салат “Греческий”"
+    },
+    {
+        src: img13,
+        name: "Салат “Тропический”"
+    },
+    {
+        src: img14,
+        name: "Салат “Японка”"
+    },
+    {
+        src: img15,
+        name: "Салат “Собери Сам”"
+    },
+    {
+        src: img12,
+        name: "Салат “Цезарь”"
+    },
+    {
+        src: img13,
+        name: "Салат “Оливье”"
+    },
+    {
+        src: img14,
+        name: "Салат “Летний”"
+    },
+];
+
 const Menu = () => {
     return(
         <section className="menu">
@@ -14,194 +85,15 @@ const Menu = () => {
             </div>
 
             <div className="categories">
-                <div className="category active">
-                    <img src={img1} alt="" />
-                    <p className="category-name">
-                        Салаты
-                    </p>
-                </div>
-
-                <div className="category">
-                    <img src={img2} alt="" />
-                    <p className="category-name">
-                        Напитки
-                    </p>
-                </div>
-
-                <div className="category">
-                    <img src={img3} alt="" />
-                    <p className="category-name">
-                        Бургеры
-                    </p>
-                </div>
-
-                <div className="category">
-                    <img src={img4} alt="" />
-                    <p className="category-name">
-                        Закуски
-                    </p>
-                </div>
-
-                <div className="category">
-                    <img src={img5} alt="" />
-                    <p className="category-name">
-                        Пицца
-                    </p>
-                </div>
-
-                <div className="category">
-                    <img src={img6} alt="" />
-                    <p className="category-name">
-                        Акции
-                    </p>
-                </div>
+                {
+                    categories.map((category) => <Category url={category.src} name={category.name}/>)
+                }
             </div>
 
             <div className="products">
-                <div className="product">
-                    <img src="src/assets/item.png" alt="" />
-                </div>
-
-                <div className="product">
-                    <img src="src/assets/item__image.png" alt="" />
-
-                    <div className="product-text">
-                        <p className="product-name">
-                            Салат “Греческий”
-                        </p>
-                        <p className="product-weight">
-                            300 грамм - 1 порция
-                        </p>
-                        <p className="product-kcall">
-                            36 - белков, 11 - жиров, 55 - углеводов
-                        </p>
-
-                        <a href="#" className="add-to-cart">
-                            Добавить в корзину
-                        </a>
-                    </div>
-                </div>
-
-                <div className="product">
-                    <img src="src/assets/item__image3.png" alt="" />
-
-                    <div className="product-text">
-                        <p className="product-name">
-                            Салат “Тропический”
-                        </p>
-                        <p className="product-weight">
-                            300 грамм - 1 порция    
-                        </p>
-                        <p className="product-kcall">
-                            36 - белков, 11 - жиров, 55 - углеводов
-                        </p>
-
-                        <a href="#" className="add-to-cart">
-                            Добавить в корзину
-                        </a>
-                    </div>
-                </div>
-
-                <div className="product">
-                    <img src="src/assets/item__image4.png" alt="" />
-
-                    <div className="product-text">
-                        <p className="product-name">
-                            Салат “Греческий”
-                        </p>
-                        <p className="product-weight">
-                            300 грамм - 1 порция
-                        </p>
-                        <p className="product-kcall">
-                            36 - белков, 11 - жиров, 55 - углеводов
-                        </p>
-
-                        <a href="#" className="add-to-cart">
-                            Добавить в корзину
-                        </a>
-                    </div>
-                </div>
-
-                <div className="product">
-                    <img src="src/assets/item5.png" alt="" />
-
-                    <div className="product-text">
-                        <p className="product-name">
-                            Салат “Греческий”
-                        </p>
-                        <p className="product-weight">
-                            300 грамм - 1 порция
-                        </p>
-                        <p className="product-kcall">
-                            36 - белков, 11 - жиров, 55 - углеводов
-                        </p>
-
-                        <a href="#" className="add-to-cart">
-                            Добавить в корзину
-                        </a>
-                    </div>
-                </div>
-
-                <div className="product">
-                    <img src="src/assets/item__image4.png" alt="" />
-
-                    <div className="product-text">
-                        <p className="product-name">
-                            Салат “Греческий”
-                        </p>
-                        <p className="product-weight">
-                            300 грамм - 1 порция
-                        </p>
-                        <p className="product-kcall">
-                            36 - белков, 11 - жиров, 55 - углеводов
-                        </p>
-
-                        <a href="#" className="add-to-cart">
-                            Добавить в корзину
-                        </a>
-                    </div>
-                </div>
-
-
-                <div className="product">
-                    <img src="src/assets/item__image4.png" alt="" />
-
-                    <div className="product-text">
-                        <p className="product-name">
-                            Салат “Греческий”
-                        </p>
-                        <p className="product-weight">
-                            300 грамм - 1 порция
-                        </p>
-                        <p className="product-kcall">
-                            36 - белков, 11 - жиров, 55 - углеводов
-                        </p>
-
-                        <a href="#" className="add-to-cart">
-                            Добавить в корзину
-                        </a>
-                    </div>
-                </div>
-
-                <div className="product">
-                    <img src="src/assets/item__image8.png" alt="" />
-
-                    <div className="product-text">
-                        <p className="product-name">
-                            Салат “Греческий”
-                        </p>
-                        <p className="product-weight">
-                            300 грамм - 1 порция
-                        </p>
-                        <p className="product-kcall">
-                            36 - белков, 11 - жиров, 55 - углеводов
-                        </p>
-
-                        <a href="#" className="add-to-cart">
-                            Добавить в корзину
-                        </a>
-                    </div>
-                </div>
+                {
+                    products.map((product) => <Product url={product.src} name={product.name}/>)
+                }
             </div>
 
             <button className="button button-more">
