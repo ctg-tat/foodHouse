@@ -193,6 +193,7 @@ export const IconSnacks = () => {
     </svg>
   );
 };
+
 export const IconPizza = () => {
   return (
     <svg
@@ -209,6 +210,7 @@ export const IconPizza = () => {
     </svg>
   );
 };
+
 export const IconSale = () => {
   return (
     <svg

@@ -152,6 +152,7 @@ li a.active{
   gap: 30px;
 
   margin: 60px 0 90px 0;
+  cursor: pointer;
 }
 
 .category{
@@ -164,6 +165,7 @@ li a.active{
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 
   transition: all .5s ease;

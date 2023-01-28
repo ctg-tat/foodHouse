@@ -48,6 +48,11 @@ const Menu = () => {
             </div>
           );
         })}
+        <div className="category" onClick={() => onClickCategoryHandle("none")}>
+          <p className="category-name">
+            Все
+          </p>
+        </div>
       </div>
 
       <div className="products">
